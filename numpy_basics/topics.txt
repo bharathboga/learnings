@@ -1,0 +1,46 @@
+what is ndarray
+ndarray is an ndimensional array. Used to store vector(1D), matrix(2D), and 3D,4D...
+attributes ?
+
+to create an ndarray from python list
+a = np.array(list_or_list_of_lists)
+a.T / a.dtype / a.flat / a.size / a.itemsize / a.nbytes / a.ndim / a.shape /
+
+ways to create an ndarray
+a = np.arange(low(incl), high(excl), step)
+a = np.linspace(low(incl),high(incl),no_of_values)
+a = np.random.rand(n1,n2,n3...nd)
+a = np.random.randint(low(incl),high(excl),size = shape)
+a = np.random.random_sample(shape)
+a = np.ones(shape) / a = np.zeros(shape)) / a = np.full(shape,some_value)
+b = np.identity(order_value)
+c = np.repeat(a, times, axis )
+
+operations on ndarray
+b = a.copy()
+a.max()  / a.min()  / a.mean()  / a.sum(0,1,none)  / 
+np.max() / np.min() / np.mean() / np.sum(0,1,none) / np.sqrt() / np.std() / 
+np.linalg.det(matrix) / [we can also find eigen, inverse using np.linalg]
+np.sin() / np.cos() /
+
+
+to manipulate an array
+a = a.astype(np.uint8)
+np.reshape(a,shape) / b = a.reshape(shape)
+a.flatten() / a.ravel() [ravel() gives view object where as flatten returns a ndarray]
+a.hsplit / a.vsplit
+
+operations on two arrays
+np.matmul(a,b) / a@b / a.dot(b) / np.dot(a,b)
+example: c = 2*a + b/3 - a*b
+np.vstack, np.hstack
+
+indexing
+boolean mask and boolean indexing: ~() / (()&()) / (() | ()) / accessing diagonal elements
+np.any / np.all
+np.nditer
+	np.nditer([a,b]) broadcastable if the dimensions are compatible
+	np.nditer with order C and F, F with external_loop flag and C with readwrite op_flags with ...
+
+loadtxt and savetxt
+proof that ndarray operations are fast, convenient, memory efficient.
